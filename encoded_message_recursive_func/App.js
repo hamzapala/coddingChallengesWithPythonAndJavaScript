@@ -1,6 +1,6 @@
 function countEncoding(s){
     if (s.startsWith('0')) return 0;
-    if (s.length = 1) return 1;
+    if (s.length <= 1) return 1;
 
     let total = 0;
     if (+s.slice(0,2) <= 26) total += countEncoding(s.slice(2));
